@@ -1,0 +1,75 @@
+.parallax-container {
+    height: 250px;
+  }
+     
+  html, body {
+    height: 100%;
+}
+
+.hero-image{
+    background: url('https://4.bp.blogspot.com/-ZLUPreCP6gg/VY0lEzaFuTI/AAAAAAABpKY/p7FGvXmim9w/s0/Orient_Blue_Mako_wallpaper.jpg') no-repeat center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.background-tint {
+    background-color: rgba(15, 15, 15, 0.5); 
+    background-blend-mode: overlay;
+  }
+
+@media (min-width:992px) {
+
+}
+
+@media (max-width:992px) {
+
+}
+
+#push.pin-top {
+    position:relative;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+
+section.pin-top {
+    position: fixed;
+    width: 100%;
+    z-index:99;
+}
+
+section.pinned {
+    display:none;
+    z-index:1;
+}
+
+#push.pinned {
+    position: static;
+    width: 100%;
+    display:none;
+}
+
+section {
+    height: 100%;
+    width: 100%;
+    min-height: 100%;
+    position: fixed;
+    top:0;
+}
+
+#push {
+    position:relative;
+    height: 100%;
+}
+
+#main {
+    background-color:white;
+    position:relative;
+    z-index:990;
+}
+
+#sidenav-overlay{
+    z-index: 990;
+}
