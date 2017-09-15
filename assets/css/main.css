@@ -19,6 +19,11 @@
     background-blend-mode: overlay;
   }
 
+
+  input#subscribe-email{
+    width: 18rem;
+}
+
 @media (min-width:992px) {
 
 }
@@ -38,7 +43,12 @@
     nav .brand-logo{
         font-size: 1rem;
     }
+
+    input#subscribe-email{
+        width: 50vw;
+    }
 }
+
 
 #push.pin-top {
     position:relative;

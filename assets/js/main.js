@@ -44,5 +44,5 @@ $(document).ready(function(){
       $("#btn-in").click(function() {
         $('html, body').animate({
             scrollTop: $("#main").offset().top
-        }, 1500);
+        }, 1000);
     });
