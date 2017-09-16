@@ -15,11 +15,11 @@ $(document).ready(function(){
       touchpadSupport: true,
       fixedBackground: false
     });
-    
-    $('.modal-trigger').leanModal();
-    $('#push,section').pushpin({ top:$('#push').height() });
 
-  
+    
+    $('.modal').modal();
+
+  cookie();
    
     
   });
@@ -46,3 +46,19 @@ $(document).ready(function(){
             scrollTop: $("#main").offset().top
         }, 1000);
     });
+
+function cookie() {
+  window.addEventListener("load", function(){
+    window.cookieconsent.initialise({
+      "palette": {
+        "popup": {
+          "background": "#000"
+        },
+        "button": {
+          "background": "#f1d600"
+        }
+      },
+      "theme": "edgeless",
+      "position": "bottom"
+    })});
+}
